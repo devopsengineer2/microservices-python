@@ -1,6 +1,6 @@
 FROM python:3.11-alpine
 WORKDIR /app
-COPY requirement.txt .
+COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY src src
 EXPOSE 5000
